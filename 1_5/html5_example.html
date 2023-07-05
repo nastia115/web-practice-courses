@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 приклад</title>
+  
+  <style>
+    video {
+        width: 500px;
+    }
+  </style>
+</head>
+<body onload="draw();">
+    <header>
+      <h1>Реєстрація на курс зі спортивного туризму</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#про нас">Про нас</a></li>
+        <li><a href="#наші тренування">Наш великий похід</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="про нас">
+        <h2>Про нас</h2>
+        <p>Туристичний клуб «Меридіан» (далі Клуб) – громадська організація, створена при кафедрі туризму та готельного господарства Східноєвропейського національного університету імені Лесі Українки, зареєстрована 29 грудня 2016 року. Діяльність громадської організації поширюється на територію Волинської області.</p>
+       <ul type="circle">Основні завдання Клубу:
+        <li>підвищення туристичної привабливості міста Луцька та Волинської області;</li>
+        <li>створення нових туристичних продуктів;</li>
+        <li>промоція туристичних брендів міста та регіону;</li>
+        <li>здійснення рекламно-інформаційної діяльності на туристичному ринку (організація та участь у туристичних виставках, конференціях, тренінгах тощо);</li>
+        <li>розвиток зеленого туризму;</li>
+        <li>встановлення та зміцнення зв’язків з українськими та міжнародними організаціями такого типу.</li>
+       </ul>
+        <figure>
+          <img src="tourism.jpg" alt="Зобрженя гір">
+          <figcaption><b>Девіз Клубу: «Подорожуй, навчайся, пізнавай світ!».</b></figcaption>
+        </figure>
+      </section>
+      <section id="наші тренування">
+        <h2>Наші змагання</h2>
+        <p>Кожного року ми ходимо у похід в Карпати! Ось маленьке відео з нашої підготовки до нього. Гарного перегляду :)</p>
+        <video controls>
+          <source src="#"  type="video/mp4">
+          Ваш браузер не підтримує відео.
+        </video>
+      </section>
+      <section id="contact">
+        <h2>Форма контакту</h2>
+        <form>
+          <label for="name">Ім'я:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="birthdate">Дата народження:</label>
+          <input type="date" id="birthdate" name="birthdate">
+          
+          <label for="message">Повідомлення:</label>
+          <textarea id="message" name="message" required></textarea>
+          
+          <button type="submit">Надіслати</button>
+        </form>
+      </section>
+      <section id="multimedia">
+        <h2>Мультимедіа</h2>
+        
+        <h4>Послухайте,саме такі веселі пісні чекають вас біля теплого вогнища в затишному колі нових друзів.</h4>
+        <audio controls>
+          <source src="tourism_song.mp3" type="audio/mpeg">
+          Ваш браузер не підтримує аудіо.
+        </audio>
+        
+        <h3>Канвас</h3>
+        <canvas id="myCanvas" width="300" height="200">
+          Ваш браузер не підтримує канвас. Оновіть браузер або скористайтеся іншим.
+        </canvas>
+        <script>
+          var canvas = document.getElementById("myCanvas");
+          var ctx = canvas.getContext("2d");
+          ctx.fillStyle = "#669559";
+          ctx.fillRect(44,56,150,75);
+         </script>
+      </section>
+    </main>
+    <footer>
+      <p>Права захищено &copy; 2023</p>
+    </footer>
+  </body>
+  </html>
