@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(159, 154, 238);
+    font-family: Arial, sans-serif;
+}
+h1{
+    margin: 70px;
+    border: 1px solid;
+    color: black;
+    text-align: center;
+}
+.centre-img {
+    display: block;
+    margin: 0 auto;
+    
+}
+figcaption{
+    color: black;
+}
+h4{
+    font-size: 20px;
+    text-indent: 30px;
+}
+
+h2{
+    color: tomato;
+    text-align: center;
+    font-size: 30px;
+}
+h3{
+    text-indent: 70px;
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+    text-indent: 20px;
+}
