@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Розміщення з CSS</title>
+    <style>
+h1 :nth-child(even) {
+color: red;
+}
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:orange;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav ul li{
+  float: left;
+  border-right: 1px solid #bbb;
+}
+li a {
+  display: block;
+  color: white;
+text-align: center;
+padding: 16px 16px;
+text-decoration: none;
+}
+ li a:hover:not(.active){
+background-color: #111;
+}
+.active {
+  background-color:red;
+}
+
+.about_us_img {
+  float: left;
+ margin: 50px;
+ border-radius: 30px;
+}
+.our_description {
+  border: 3px dashed darkblue;
+  width: 1000px;
+  border-radius: 5%;
+  margin-left: 10px;
+}
+ h2 {
+  color: red;
+  font-family: cursive;
+font-size: 36px;
+    
+}
+h3{
+  color: red;
+}
+main section div ul li::marker {
+  color: red;
+}
+.programa_razom_na_roki{
+  float: left;
+ margin: 50px;
+ border-radius: 30px;
+}
+.our_news{
+  border: 3px dashed purple;
+  width: 1000px;
+  border-radius: 5%;
+  margin-left: 10px;
+}
+#programa_loyalnst{
+  text-align: center;
+}
+.contact{
+  width: 1000px;
+  border: 3px dashed darkgreen;
+  border-radius: 5%;
+  margin: 50px 10px;
+}
+#contact-name{
+  text-align: center;
+}
+table{
+  border: 3px dashed darkgreen;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 380px;
+  margin-top: 10px;
+  
+}
+th,td{
+  border: 1px solid black;
+}
+#contact{
+  width: 1000px;
+}
+#contact-name {
+text-align: center;
+}
+#lesson{
+  width: 1000px;
+}
+#lesson-name{
+  text-align: center;
+  text-decoration: underline;
+}
+#feedback{
+  text-align:start ;
+  margin-left: 10px;
+}
+.free_lesson{
+  width: 1000px;
+  border: 3px dashed darkslateblue;
+  border-radius: 5%;
+  margin: 50px 10px;
+}
+.form{
+  margin: 20px;
+}
+#buttom{
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+</style>
+</head>
+<body>
+  <header class="header">
+    <img src="navchalochka.gif" alt="назва закладу">
+   <h1>
+      <span>
+      ЧИМ </span>
+      <span>БІЛЬШЕ</span>
+       <span>ЗНАЄШ,</span> 
+    <br>
+       <span> ТИМ </span>
+        <span>БІЛЬШЕ</span> 
+        <span> МОЖЕШ!</span>
+  </h1>
+  </header>
+  
+  <nav class="nav">
+    <ul>
+      <li><a class="active" href="#Головна">Головна</a></li>
+      <li><a href="#Новини">Новини</a></li>
+      <li> <a href="#Контакти">Контакти</a></li>
+      <li> <a href="#Безкоштовне заняття">Безкоштовне заняття</a></li>
+    </ul>
+  </nav>
+  <main class="content">
+    <section id="Головна">
+      <div >
+        <img  src="about_us.jpg" alt="зображення" width="300px" height="300px" class="about_us_img" >
+      
+        <h2>Про Нас</h2>
+        <div class="our_description">
+         <p>
+          Дитячий розвиваючий центр «НАВЧАЛОЧКА» – унікальний навчально-виховний центр в місті Вінниця, що створив максимально комфортні умови для перебування дітей. </p>
+        
+        <ul type="circle">У нашому центрі обладнані на високому рівні:
+          <li>Онлайн навчання із власним кабінетом на сайті</li>
+          <li>Класи для навчання</li>
+          <li>Кімнати для розвитку</li>
+          <li>Приміщення для міні-садочка</li>
+          <li>Зал очікування для батьків</li>
+          <li>Роздягалка для дітей</li>
+        </ul>
+        <h3>Наша Мета</h3>
+       <p>Бути максимально відкритими для Вас, адже Ви віддаєте в наші руки найдорожче і найцінніше - дитину.</p> 
+        
+       <p> Навчання і розвиток дитини – священне таїнство.</p>
+        
+       <p> Завдання нашого колективу спільно з батьками – укріпити внутрішній стрижень маленької людини, закласти міцний фундамент для будівництва щасливого майбутнього. Для нас, велика гордість, бути свідомими того, що діти, які відвідують наш Центр, пізнають навколишній світ завдяки зусиллям наших викладачів. </p>
+      </div>
+      </div>
+
+      
+    </section>
+    
+    
+    <section id="Новини">
+      
+<div>
+  <img src="programa_razom_na_roki.jpg" alt="зображення" width="300px" height="300px" class="programa_razom_na_roki" >
+  <h2>Новини</h2>
+  <div class="our_news">
+  <h3>Програма «Разом на роки!»</h3>
+  <p>Якщо Ви відвідуєте «Навчалочку» регулярно –це гарантує Вам знижки, при пред’явлені абонементів де відмічена оплата за 9 місяців і більше у кожному.</p>
+<br>
+<p>Якщо Ви з нами третій рік –5%</p>
+  <p>Якщо Ви з нами четвертий рік–10 %</p>
+  <p>Якщо Ви з нами п`ятий рік–15 %.</p>
+  <br>
+  <p>УВАГА!!! Без абонементу відсотки не нараховуються!</p>
+  <br>
+  <h3 id="programa_loyalnst">Програма «Лояльність»</h3>
+  <ul type="circle">Умови програми :
+    <li>Знижка 5 % (на другий абонемент) надаються при навчанні двох дітей з однієї сім’ї.</li>
+    <li> Знижка 5 %(на другий напрямок) при навчанні на двох напрямках одночасно.</li>
+    <li>Якщо Ваша дитина Іменинник у наступному місяці,зареєструйтесь у адміністратора (наявність свідоцтва про народження обов’язкова) та отримайтезнижку 5 % при купівлі абонементу.</li>
+
+  </ul>
+</div>
+</div>
+    </section>
+   <section id="Контакти">
+    <div id="contact">
+    <h2 id="contact-name">Контакти</h2>
+  </div>
+    <div class="contact">
+     
+      <table>
+        <tr>
+          <th>Адреса</th>
+          <th>Номер телефона</th>
+        </tr>
+        <tr>
+        <td>Брацлавська, 1</td>
+        <td>097 333 59 33</td>
+      </tr>
+      <tr>
+        <td>600-річчя, 66/б</td>
+        <td>098 333 59 33</td>
+      </tr>
+      <tr>
+        <td>Замостянська, 34/а</td>
+        <td>098 333 79 33</td>
+      </tr>
+      </table>
+    </div>
+
+   </section>
+   <section id="Безкоштовне заняття">
+<div id="lesson">
+    <h2 id="lesson-name" >Безкоштовне заняття</h2>
+  </div>
+  <div class="free_lesson">
+    <h3 id="feedback">Залишіть ваші дані і ми вам зателефонуємо</h3>
+<form class="form" action="registration.php" method="post">
+  <label for="username">Ваше ім'я</label>
+  <input type="text" id="username" name="username" placeholder="Ваше ім'я">
+  <br>
+  <label for="lastname">Ваша прізвище</label>
+  <input type="text" id="lastname" name="lastname" placeholder="Ваше прізвище">
+  <br>
+  <label for="phone">Телефон</label>
+  <input type="tel" id="phone" name="phone" placeholder="Номер телефону +380*********">
+  <br>
+  <div id="buttom">
+  <input  type="submit" value="Відправити дані">
+</div>
+</form>
+  </div>
+   </section>
+  </main>
+  <footer class="footer">
+    <p>Копірайт © 2023 Всі права захищені.</p>
+  </footer>
+</body>
+</html>
