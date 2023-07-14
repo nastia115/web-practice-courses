@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:lightsteelblue;
+    color: black;
+    font-size: 20px;
+    margin: 40px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif;
+    text-align: center;
+  }
+  .img {
+text-align: center;
+  }
+  p {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+  .fancy-text {
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: left;
+  }
+  #zalik {
+font: bold;
+text-align: left;
+  }
+  #gold{
+    font-size: 23px;
+    font-style: italic;
+    color:darkgoldenrod;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  }
+  #silver{
+    font-size: 23px;
+    font-style: italic;
+    color: gray;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  }
+  #bronza{
+    font-size: 23px;
+    font-style: italic;
+    color: sienna;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  }
+  .uppercase {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: initial;
+  }
+  #ukraine{
+    background-color: darkorange;
+  }
+  
+  .shadow {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  }
