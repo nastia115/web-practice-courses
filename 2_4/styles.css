@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+  }
+  /* Стиль body */
+  body {
+    font-family: Arial;
+    margin: 0;
+    
+    color: black;
+    line-height: 2;
+  }
+  /* Header/logo Title */
+  .header {
+    padding: 60px;
+    text-align: center;
+    background: green;
+   
+  }
+  /* Стиль верхней панели навигации */
+  .navbar {
+    display: flex;
+    background-color: lightgreen;
+  }
+  /* Стиль ссылок на панели навигации */
+  .navbar a {
+    
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+  }
+  .main h2{
+    text-align: center;
+    font-size: 40px;
+  }
+  .main img {
+    width: 500px;
+    border-radius: 10%;
+    margin: 25px;
+    
+  }
+  .text_section_1{
+    font-size: 35px;
+    margin: 20px;
+    font-family: cursive;
+    text-shadow: #28492825;
+  }
+  .think_expert{
+    font-family:cursive;
+    font-size: 25px;
+    width: 1000px;
+    background-color:rgba(143, 188, 143, 0.678);
+    margin: 30px;
+    height: 150px;
+    border-radius: 2%;
+  } 
+  #main_text_section_1{
+    margin: 15px;
+    font-size: 18px;
+   
+  }
+  .title{
+    font-weight: bold;
+  }
+  /* Изменить цвет при наведении */
+  .navbar a:hover {
+    background-color: #ddd;
+    
+  }
+  
+  
+
+  
+  /* Главный столбец */
+  .main {
+    flex: 70%;
+    background-color: rgb(143, 230, 148);
+    padding: 20px;
+  }
+  
+  /* Поддельное изображение, только для этого примера */
+  .fakeimg {
+    
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background-color: green;
+  }
+  
+  
+  @media (min-width: 601px) {
+    header  {
+        font-size: 2rem;
+    }
+    
+    main {
+        font-size: 1.8rem;
+    }
+    .navbar{
+      width: 100%;
+    }
+}
+  
+
