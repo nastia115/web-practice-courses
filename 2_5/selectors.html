@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Селектори та специфічність CSS</title>
+    <style>
+        @media screen and (min-width: 320px){
+        body{
+            background-color:rgb(221, 188, 245);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        }
+        header h1{
+            font-size: 24px;
+            text-align: center;
+            font-family: monospace;
+            color:rgba(147, 31, 230, 1) ;
+            margin-top: 10px;
+        }
+        .left-sidebar{
+            width: 100px;
+            height: 100%;
+            margin-top: 70px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            overflow-x:hidden;
+            padding-top: 10px;
+            background-color: rgb(147, 31, 230);
+            transition: 0.5s;
+        }
+        .left-sidebar a {
+            
+            font-size: 12px;
+            text-align: right;
+            padding: 6px;
+            text-decoration: none;
+            display: block;
+            color: black;
+            font-family: monospace;
+            
+        }
+        .left-sidebar li{
+           list-style-type: none;
+        }
+        .left-sidebar a:hover{
+            color: rgb(204, 174, 226);
+        }
+        video{
+            width: 250px;
+            margin-left: 30%; 
+            
+        }
+        .one_description{
+            font-size: 16px;
+            margin-left: 100px;
+            
+            line-height: 1.3;
+
+        }
+        h2{
+            font-size: 24px;
+            text-align: center;
+            font-family: monospace;
+            color:rgba(147, 31, 230, 1) ;
+            margin-top: 10px;
+            margin-left: 100px;
+        }
+        .train p {
+            font-size: 16px;
+            margin-left: 100px;
+            line-height: 1.3;
+        }
+        .train img {
+            width:200px;
+            height: auto;
+            margin-left: 110px;
+            text-align: center;
+        }
+        .dance{
+            margin-left: 100px;
+            font-size: 16px;
+            line-height: 1.3;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+            max-width: 200px;
+        }
+        .container img{
+            width: 100%;
+            height: auto;
+            margin-left: 110px;
+            margin-top: 10px;
+        }
+        .container .btn {           
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            -ms-transform: translate (-50%, -50%);
+            background-color: blueviolet;
+            color: black;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            margin-left: 100px;
+            margin-top: 5px;
+        }
+        .container .btn :hover{
+            background-color: white;
+        }
+        .container .record{
+            position: absolute; 
+            bottom: 20%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            -ms-transform: translate (-50%, -50%);
+            background-color: rgb(93, 23, 158);
+            color: black;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            margin-left: 100px;
+            margin-top: 5px;
+           
+        }
+        .container .record :hover{
+            background-color: white;
+        }
+        .container .record :focus{
+            background-color: rgb(184, 96, 172);
+        }
+        .social-media{
+            padding:7px ;
+            margin-left: 87px;
+            
+        }  
+        .social-media p{  
+            margin-left: 30px;
+           
+        }  
+        .social-media li{
+            list-style-type: none;
+            font-weight: 600;
+            
+        }        
+
+    }
+    
+        </style>
+        </head>
+
+    
+ 
+<body>
+    <header>
+        <div>
+            <h1>VERTICAL DANCE SCHOOL</h1>
+        </div> 
+    </header>
+   
+        <div class="left-sidebar">
+
+        
+            <nav>
+                <ul>
+                    <li><a href="#about_us">Головна</a></li>
+                    <li><a href="#our_treiners">Наші тренера</a></li>
+                    <li><a href="#style_dance">Стилі танців</a></li>
+                    <li><a href="#contucts"> Контакти </a> </li>
+                </ul>
+            </nav>  
+        </div>
+        <div>
+            <p id="about_us" class="one_description">ШУКАЄТЕ ЗАНЯТТЯ ДЛЯ ДИТИНИ?
+                У НАС ВОНИ Є!
+                І не лише для дитини, а й для Вас!
+                ОКРІМ ЗАНЯТТЯ ВИ ОТРИМУЄТЕ неймовірну атмосферу, участь в змаганнях, концертах, цікавих заходах, безліч інтерактивів, вечірок, поїздки, літній та зимній табори, відкриті уроки, фото та відео звітити
+                ЦІКАВИТЬ? 
+                </p>   
+        </div>
+  <div id="video">
+   <video src="video_vertical.mp4" controls autoplay></video>
+  </div>
+ <div> <p class="one_description">
+    Пропонуємо більше 10 напрямків для дітей віком від 3 років та дорослих:
+    Baby dance | Pop dance | Contemporary | Modern Jazz| High Heels |
+    Stretching | Breaking | Hip Hop | Jazz Funk | Acrobatics | Gymnastics 
+    • перше заняття БЕЗКОШТОВНО
+</p>
+</div>
+<h2 id="our_treiners">Наші тренера</h2>
+<div class="train">
+    
+<img src="train_1.jpg" alt="фото тренера">
+
+<p>«Дорогу здолає той, хто йде»
+    Таким кредо керується наш головний тренер, хореограф,
+    засновниця школи @sotskaia.viktoriia
+    •Соцька Вікторія Владиславівна
+    Здобула освіту та отримала ступінь бакалавра в Уманському державному педагогічному університеті ім.П.Тичини за направленням «Хореографія», в цьому ж навчальному закладі здобула освітньо-кваліфікаційний рівень вищої освіти
+    "спеціаліст". П'ять років працювала помічником хореографа з естрадної хореографії в колективі «Калейдоскоп».
+    В 2011 заснувала "Vertical Dance School". Протягом всього цього
+    часу Вікторія непокладаючи рук працює над таким важливим проектом, який змінив не тільки її життя, а й кожного, хто вже став частинкою Vertical familv. 3 кожним роком все більше її зусиль докладається до того, аби наша школа дійсно стала для дітей другою домівкою
+    Вікторія Владиславівна - природний лідер, вона сповнена пристрастю та харизмою. Впевнена у собі, вона з радістю демонструє своїм вихованцям як поліпшити себе і світ навколо.
+    Саме тому для багатьох Вікторія Владиславівна є прикладом. Діти безмежно обожнюють її не тільки як тренера, а і як наставника, що мотивує не здаватися і йти вперед, адже дорогу здолає тільки
+    той, хто йде</p>
+    <img src="train_2.jpg" alt="фото тренера">
+    <p>«Немає нічо не можливого»
+        Запевняе наш хореограф @andrey_ploshchenko
+        Площенко Андрій Миколайович
+        Перше знайомство з танцем відбулося коли було 9 років і з того часу це є невід'ємною частинного життя! Здобув освіту в Кам'янець-Подільському коледжі культури у мистецтв. Багато відвіданих майстер класів від відомих хореографів України і не тільки. На даний момент закінчує навчання і Вінницькому державному педагогічному університеті ім. Михайла
+        Коцюбинського.
+        Діючий артист Академічного ансамблю пісні і танцю «Поділля»
+        Андрій Миколайович володіє такими стилями choreo, hip hop, modern, contemporary. Досвіт роботи з дітьми більше 7 років
+    </p>
+    <img src="train_3.jpg" alt="фото тренера">
+    <p>
+        «Сенс життя не в тому, щоб чекати, коли
+закінчиться гроза, а в тому, щоб вчитися танцювати під дощем!»
+3 такою глибокою мотивацією живе наш хореограф
+@annet zshkrk
+•Зашкарук Анна Миколаївна
+Творчість - її поклик з дитинства. | саме йому вона присвятила вже більше 15 років. Навчалась у Вінницькій дитячій школі мистецтв, здобула освіту Вінницького коледжу культури і мистецтв ім. М.Д. Леонтовича за спеціальностю «Хореографія».
+На даний момент закінчує навчання у Вінницькому державному педагогічному університеті ім. Михайла Коцюбинського.
+Анна Миколаївна точно знає і усвідомлює усю важливість вміння адаптуватися і діяти, про що й говорить її кредо. Тому на кожному тренуванні вона працює над тим, аби і діти вміли володіти цими
+майстерними навичками, адже це так важливо для кожного артиста
+
+    </p>
+    <img src="train_4.jpg" alt="фото тренера">
+    <p>«Без руху не буде життя,
+        Без життя не буде буття,
+        Без буття не буде тебе,
+        Повір в себе, і буде все»
+        До таких переконань звертається наш топ-хореограф
+        @katusha_karter
+        Киринюк Катерина Валентинівна
+        Є випускницею Vertical Dance School. Має освіту Вінницького коледжу культури і мистецтв ім.М.Д.Леонтовича за спеціальністю «Хореографія». Також закінчила Львівський національний університет ім.Івана Франка, де отримала ступінь бакалавра за професійною кваліфікацією "Вчитель хореографічних дисциплін».
+        Викладач хореографії несе велику відповідальність за емоційний стан учня, тому що діти, які мають хист до мистецтва, найбільш чутливі. Тож, до кожного учня треба застосовувати індивідуальний підхід. Для Катерини Валентинівни це точно не проблема, адже в неї досвід роботи з дітьми в школі танцю
+        "Vertical" вже майже 10 років
+    </p>
+    <img src="train_6.jpg" alt="фото тренера">
+    <p>
+        «Ніколи не відмовляйтеся від свосі мрії»
+Таке кредо по життю одного з наших тренерів з художньої гімнастики @zaadorozhna
+Задорожна Юлія Олександрівна
+10 років займалась художньою гімнастикою в СК "Прем'єра" та
+отримала спортивний розряд кандидата у майстри спорту
+України.
+Основна вимога для отримання безсумнівної користі гімнастики -
+це
+звичка регулярних занять, чудово організовує, дисциплінує.
+Координація, витримка та бажання вдосконалюватись - якості, які Юлія Олександрівна розвиває в наших дівчаток. | звісно, жага до мрії, від якої ніколи не можна відмовлятись
+    </p>
+    <img src="train_5.jpg" alt="фото тренера">
+    <p>
+        «Всьому свій час»
+Цим кредо керується по життю тренер з художньої гімнастики
+@_prusiazhniuk.k ¿
+Присяжнюк Каріна Віталіївна
+Сумлінно займалась 10 років художньою гімнастикою в СК
+"Прем'єра" та отримала спортивний розряд кандидата у майстри спорту України.
+Фізичний розвиток, виховний процес, творчі здібності - ось що дають заняття з художньої гімнастики.
+Каріна Віталіївна активно пропрацьовує всі ці складові з нашими дівчатами, аби на сцені показати якнайкращий результат.
+    </p>
+    <img src="train_7.jpg" alt="фото тренера">
+    <p>
+        «Бути відданим. Бути спортивним. Ніколи не здаватися. Бути контрольованим. Бути емоційним.»
+Таке кредо по життю нашого топ-хореографа @lesha.kudlaienko
+Кудлаєнко Олексій Ярославович
+Є випускником ансамблю "Барвінок" та Київського Національного університету культури і мистецтв. За його плечима викладання у відомих студіях танцю м.Киева, супровід виступів світових поп зірок на гастролях в різних країнах. Хореограф, артист балету, педагог. Також працював зі збірною України з акробатики хореографом-постановником композицій
+В нашій школі працює за напрямками contemporary Ta jazz-
+modern
+Навчає дівчат проявляти свої емоції та душевний стан за допомогою пластики, працює з диханням і заспокоєнням нервової системи, навчає працювати з м'язами та гнучкістю.
+Якщо хочете, аби Ваша дитина володіла такими відмінними навичками, тоді Вам точно на заняття до Олексія Ярославовича
+    </p>
+    <img src="train_8.jpg" alt="фото тренера">
+    <p>
+        «Stay afraid, but do it anyway»
+в перекладі «Бійся, але зроби це»
+Таке кредо у нашого адміністратора @vi_ctorious-
+• Коваленко Вікторія Олександрівна
+Талановита, відповідальна, креативна, така важлива для Vertical
+dance school.
+Адміністратор - це людина, що здійснює роботу з ефективного спілкування з відвідувачами. Консультує з питань, що стосуються послуг, які надає наша школа. Забезпечує контроль за порядком.
+Вже другий рік Вікторія старанно виконує ці процеси, аби підвищити рівень комфорту Вашого перебування в стінах нашої танцювальної домівки
+    </p>
+    <div id="style_dance">
+        <h2>Стилі танців</h2>
+</div>
+<div class="container">
+   
+    <img src="baby_dance.jpg" alt="Дитячі танці" >
+   <form action="baby_dance.html" method="get">
+    <button   class="btn" type="submit" >Baby dance</button>
+   </form>
+   <form action="form_registration.html">
+    <button class="record" type="submit">Записатись</button>
+  </form>
+</div>
+<div class="container">
+    <img src="pop_dance.jpg" alt="Pop танці">
+    <form action="pop_dance.html" method="get"> 
+    <button class="btn" type="submit">Pop dance</button> 
+  </form>
+  <form action="form_registration.html">
+    <button class="record" type="submit">Записатись</button>
+  </form>
+</div>
+<div class="container">
+    <img src="contemperary.jpg" alt="Контемп">
+    <form action="contemperary.html" method="get">
+    <button class="btn" type="submit">Contemperary</button>
+</form>
+<form action="form_registration.html">
+    <button class="record" type="submit">Записатись</button>
+  </form>
+</div>
+<div class="container">
+    <img src="modern_jazz.jpg" alt="Modern Jazz">
+    <form action="modern_jazz.html" method="get">
+    <button class="btn" type="submit">Modern Jazz</button>
+</form>
+<form action="form_registration.html">
+    <button class="record" type="submit">Записатись</button>
+  </form>
+</div>
+<div class="container">
+    <img src="high_heels.jpg" alt="High Heels">
+    <form action="high_heels.html" method="get">
+    <button class="btn" type="submit">High Heels</button>
+</form>
+<form action="form_registration.html">
+    <button class="record" type="submit">Записатись</button>
+  </form>
+</div>
+<div class="container">
+    <img src="stretching.jpg" alt="Stretching">
+    <form action="stretching.html" method="get">
+    <button class="btn" type="submit">Stretching</button>
+</form>
+<form action="form_registration.html">
+    <button class="record" type="submit">Записатись</button>
+  </form>
+</div>
+<div class="container">
+    <img src="breaking.jpg" alt="Breaking">
+    <form action="breaking.html" method="get">
+    <button class="btn" type="submit">Breaking</button>
+</form>
+<form action="form_registration.html">
+    <button class="record" type="submit">Записатись</button>
+  </form>
+</div>
+<div class="container">
+    <img src="jazz_funk.jpg" alt="Jazz Funk">
+    <form action="jazz_funk.html" method="get">
+    <button class="btn" type="submit">Jazz Funk</button>
+</form>
+<form action="form_registration.html">
+    <button class="record" type="submit">Записатись</button>
+  </form>
+</div>
+</div>
+<footer>
+    <div class="social-media" id="contucts">
+        <p>Ви можете знайти нас у соціальних мережах та за адресами: <ul>
+                <li>Острозького 55</li>
+                <li>Порика 28</li>
+            </ul> </p>
+       
+            <a href="https://instagram.com/vertical_vin_official?igshid=MzRlODBiNWFlZA==" target="_blank">
+        <img src="icons8-instagram-48.png" alt="інстаграм"></a>
+        <a href="https://t.me/Vertical_dance_school" target="_blank"> 
+            <img src="icons8-телеграмма-app-48.png" alt="телеграм">
+        </a>
+        <a href="https://www.facebook.com/VerticalDanceSchool" target="_blank"> 
+            <img src="icons8-facebook-новый-48.png" alt="фейсбук">
+        </a>
+        <a href="https://t.me/c/1194841151/1955" target="_blank"> 
+            <img src="icons8-youtube-48.png" alt="фейсбук">
+        </a>
+    </div>
+</footer>
+    <!-- Ваш контент тут -->
+</body>
+</html>

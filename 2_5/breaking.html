@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>breaking</title>
+    <style>
+ @media screen and (min-width: 320px){
+        body{
+            background-color:rgb(221, 188, 245);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        }
+        header h1{
+            font-size: 24px;
+            text-align: center;
+            font-family: monospace;
+            color:rgba(147, 31, 230, 1) ;
+            margin-top: 10px;
+        }
+        .main_photo img{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin: 10px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 30px;
+    }
+    .abonement select{
+        font-size: 16px;
+        border-radius: 10px;
+        margin-left: 30px;
+        background-color: plum;
+       
+    }
+   
+    .abonement option{
+        border: 2;
+        width: 100%;
+        height: 100%;
+        background-color:thistle;   
+     }
+     
+     
+     .text p{
+        font-weight: normal;
+     }
+     .text li{
+        list-style-type: none;
+     }
+     .text li:before{
+        font-weight: 900;
+        color: indigo;
+        padding-right: 10px;
+        content:"*";
+     }
+     .price-list{
+        border-radius: 5%;
+        padding: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 10px;
+        background-color: plum;}
+
+        .price-list h3{
+            text-align: center;
+        }
+        .social-media{
+            padding:7px ;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .abonement .record{
+            background-color: rgb(93, 23, 158);
+            color: black;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            margin-left: 100px;
+            margin-top: 10px;
+           
+        }
+        .abonement .record :hover{
+            background-color: white;
+        }
+        .abonement .record :focus{
+            background-color: rgb(184, 96, 172);
+        }
+  
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BREAKING</h1>
+    </header>
+    <div class="main_photo">
+        <img src="breaking.jpg" alt="Breaking">
+    </div>
+    <p>Абонемент:</p>
+    <div class="abonement">
+    <form action="form_registration.html">
+        <select name="abonement" id="">
+            <option value="Change">Вибрати опцію</option>
+            <option value="trial_lesson">Пробне заняття</option>
+            <option value="one_time_lesson">Разове заняття</option>
+            <option value="abonement_on_4_lessons">Абонемент на 4 заняття</option>
+            <option value="abonement_on_8_lessons">Абонемент на 8 заняття</option>
+            <option value="abonement_on_12_lessons">Абонемент на 12 занять</option>
+        </select>
+        <button class="record" type="submit">Записатись</button>
+    </form>
+</div>
+<div class="text">
+    <p>Брейк Данс – спортивний танець, що містить елементи акробатики. Виділяють два напрямки: верхній і нижній брейк. Перший робить акцент на рухи руками, повороти голови, хвилеподібні і геометричні руху корпусом. Другий збільшує навантаження на руки, його основні фігури: біг навколо своєї осі, віджимання, обертання на голові або на руці.</p>
+    <p> Цікаві факти про Брейк Данс:  
+    <ul>
+            <li> У 80-е танець був настільки популярний в Європі, що деякі школи заміняли їм уроки фізкультури.</li>
+            <li>Брейк Данс включений в програму Олімпійських ігор. Так-так, вперше дисципліна була представлена в 2018 році на юнацьких Олімпійських іграх, а наступні змагання пройдуть на Олімпіаді-2024 в Парижі. Круто, правда?</li>
+            <li>Є думка, що це чисто чоловічий стиль, і дівчата їм не займаються – це махровий стереотип. Дівчата танцюють не гірше хлопців, на рівних беруть участь у змаганнях і перемагають чоловіків. В Dream Team, наприклад, давно і професійно займаються чудові b-girls (дівчата, які танцюють брейк).</li>
+            <li> На початку 2000-х стиль був дуже поширений в масовій культурі. Його танцювали всюди: на весіллях, випускних вечорах і просто на вулиці. Хайп поступово спав, тому може здаватися, що брейк уже ніхто не танцює. Це не так, просто стиль вийшов на професійний рівень, на майданчики фестивалів та змагань. Найбільший чемпіонат – щорічні Red Bull BC One, в якому 16 найсильніших світових танцюристів змагаються на очах тисячі глядачів.</li>
+            <li>На чемпіонаті світу в Чехії в 2019 році команда Dream Team зайняла перше місце</li>
+        </ul>
+    </p>
+</div>
+<div class="list">
+   <div class="price-list">
+    <h3>Абонемент</h3>
+    <p>Пробне - 200 грн
+        <br>
+        Разове заняття - 300 грн
+        <br>
+        Абонемент на 4 заняття - 800 грн
+        <br>
+        Абонемент на 8 занять
+        <br>
+        Абонемент на 12 занять - 2400 грн 
+    </p>
+   </div>
+   <div class="price-list">
+    <h3>Абонементи на 3 місяці</h3>
+    <p>24 заняття - 4000 грн
+        <br>
+        36 занять - 6000 грн
+        <br>
+        72 заняття - 10800 грн 
+    </p>
+   </div>
+   <div class="price-list">
+    <h3>Річний абонемент</h3>
+    <p>120 занять - 14400 грн
+        <br>
+        144 заняття - 17200 грн 
+    </p>
+   </div>
+   <div class="price-list">
+    <h3>Увага кошти за абонементи не повертаються!</h3>
+    <p>Можливий варіант заморозки:
+        <br>
+        до 10 днів - 100 грн
+        <br>
+        більше місяця - 250 грн 
+    </p>
+   </div>
+   <div class="price-list">
+    <h3>Індивідуальні заняття</h3>
+    <p>690 грн - разове заняття 
+        <br>
+        900 грн - заняття для двох
+        <br>
+        Абонемент на 4 заняття - 2600 грн
+        <br>
+        Абонемент на 8 занять - 4800 грн
+    </p>
+   </div>
+   <div class="price-list">
+    <h3>Увага для нових клієнтів до кінця доби діє знижка на перший абонемент 15%</h3>
+    
+   </div>
+</div>
+<footer>
+    <div class="social-media">
+       
+            <a href="https://instagram.com/vertical_vin_official?igshid=MzRlODBiNWFlZA==" target="_blank">
+        <img src="icons8-instagram-48.png" alt="інстаграм"></a>
+        <a href="https://t.me/Vertical_dance_school" target="_blank"> 
+            <img src="icons8-телеграмма-app-48.png" alt="телеграм">
+        </a>
+        <a href="https://www.facebook.com/VerticalDanceSchool" target="_blank"> 
+            <img src="icons8-facebook-новый-48.png" alt="фейсбук">
+        </a>
+        <a href="https://t.me/c/1194841151/1955" target="_blank"> 
+            <img src="icons8-youtube-48.png" alt="фейсбук">
+        </a>
+    </div>
+</footer> 
+</body>
+</html>
