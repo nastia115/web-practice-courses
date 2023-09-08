@@ -6,28 +6,244 @@
     <title>Моя веб-сторінка з Bootstrap</title>
     <!-- Підключення стилів Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Parisienne&subset=latin,cyrillic' rel='stylesheet' type='text/css'⁄>
+ <style>
+  body{
+font-family: ‘Parisienne’, sans-serif;
+font-size: 24px;
+  }
+:root{
+  --color1:red;
+  --color2:blue;
+}
+header, section, footer{
+  padding: 100px 0;
+}
+header{
+  padding: 200px 0;
+}
+header, footer {
+  background: var(--color1);
+background: -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+background: -webkit-linear-gradient(left, var(--color1) 0%,var(--color2) 100%);
+background: linear-gradient(to right,var(--color1),var(--color2) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2),GradientType=1 );
+}
+.button{
+  background-color: var(--color1);
+  color: var(--bs-white);
+  max-width: 200px;
+ padding: 8px 30px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+}
+.button:hover{
+  background-color: var(--color2);
+  color: var(--bs-white);
+}
+
+ </style>
   </head>
   <body>
-    <div class="container">
+    <header>
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6">
-            <h2>Стовпець 1</h2>
-            <!-- Кнопка Bootstrap -->
-            <button type="button" class="btn btn-primary">Натисніть мене</button>
-          </div>
-          <div class="col-md-6">
-            <h2>Стовпець 2</h2>
-            <!-- Карточка Bootstrap -->
-            <div class="card">
-              <img src="card-image.jpg" class="card-img-top" alt="Карточка">
-              <div class="card-body">
-                <h5 class="card-title">Заголовок карточки</h5>
-                <p class="card-text">Опис карточки...</p>
-                <a href="#" class="btn btn-secondary">Дізнатися більше</a>
-              </div>
+          <div class="col-12">
+            <h1 class="text-center"  class="text-while">ТОП-15 НАЙБІЛЬШ ЧИТАНИХ КНИГ СВІТУ</h1>
+            <div class="button">  Замовити
             </div>
+            <a href="https://www.yakaboo.ua/?aff_id=094884&utm_source=salesdoubler&aff_sub=CjwKCAjwjOunBhB4EiwA94JWsFQeEiDjnfn1_zaHAyu816rSGwvdBx3hxaphHQAU35Abw0FsGS75dxoCePwQAvD_BwE&gclid=CjwKCAjwjOunBhB4EiwA94JWsFQeEiDjnfn1_zaHAyu816rSGwvdBx3hxaphHQAU35Abw0FsGS75dxoCePwQAvD_BwE class=" btn btn-itd btn-lg text-uppercase></a>
           </div>
         </div>
       </div>
+    </header>
+    <section >
+      <div class="container">
+        <p class="text-primary"> Цей рейтинг було створено на основі кількості надрукованих та проданих книг за півстоліття. Ми вирішили розпочати з кінця, щоб зберегти інтригу. </mark></p>
+     <p style="font-weight: 700;">Перш ніж відкрити цей рейтинг, у нас навіть не було сумнівів, що лідируючу позицію займе Гаррі Поттер! При цьому ми щиро здивувалися, коли побачили, яка книга на першому місці в рейтингу найпопулярніших книг світу.</p>
+    <p>Щороку на полицях і в електронному вигляді з'являється все більше нових книг, але якісь, все ж, залишаються фаворитами поза часом. У нашій добірці розповідаємо про 15 книг, які прочитав чи не кожен і які доповнили цей список у 2022 році.</p>  
+    </div>
+    </section>
+    <div class="container">
+      <div class="row">
+    <div class="col-md-4">
+    <div class="card">
+      <img src="book_15.jpg" class="card-img-top" alt="Карточка">
+      <div class="card-body">
+        <h5 class="card-title">15. «Становлення». Мішель Обама</h5>
+        <p class="card-text">Мішель Обама знають усі, як першу темношкіру Першу леді, яка довгий час була головною жінкою у Білому Домі. Але не багато хто знає, з чого почалася її історія. У книзі «Становлення» Мішель розповіла про свій шлях і про те, за допомогою чого та кого вона стала тією, ким стала.</p>
+        <a href="#" class="btn btn-primary">Дізнатися більше</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="book_14.jpg" class="card-img-top" alt="Карточка">
+      <div class="card-body">
+        <h5 class="card-title">14. "Щігол". Донна Тартт</h5>
+        <p class="card-text">Третій роман Донни Тартт, який здобув свою славу і став одним із найбільш читаних за останні кілька років. Це історія про силу мистецтва і про те, як 13-річний хлопчик Тео Декер блукає світом у пошуках рідної душі, після того як він став сиротою від вибуху, внаслідок якого загинула його мати. Свою втіху він знаходить у картині, яку вкрав у музеї і яка мало не коштувала йому життя.</p>
+        <a href="#" class="btn btn-primary">Дізнатися більше</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="book_13.jpg" class="card-img-top" alt="Карточка">
+      <div class="card-body">
+        <h5 class="card-title">13. «Чотири угоди». Дон Мігель Руїс</h5>
+        <p class="card-text">Автор книги має цікаве коріння – його предки були шаманами Південної Мексики, тому йому відомі деякі знання щодо відносин один одному, а також побудові здорового суспільства. Він пропонує відмовитися від незрозумілих установок, перестати вірити в плітки і не розповсюджувати їх, якщо виникають питання – завжди озвучувати їх. Відмінна книга, якщо ви хочете здобути свободу.</p>
+        <a href="#" class="btn btn-primary">Дізнатися більше</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="book_12.jpg" class="card-img-top" alt="Карточка">
+      <div class="card-body">
+        <h5 class="card-title">12. "Великий Гетсбі". Ф.С. Фіцджеральд</h5>
+        <p class="card-text">Правду кажуть, що краще один раз прочитати, ніж сто разів побачити, адже ця приказка, як жодна інша, розкриває суть книги “Великий Гетсбі”. Варто відзначити, що роман був написаний в 1925 році, в епоху "Століття Джаза". Вже це означає, що вона перенесе вас у захоплюючий любовний роман із трагічним кінцем. Красивий сюжет, красива картинка, красиві герої: ось чому ця книга стала однією з найбільш читаних у світі.</p>
+        <a href="#" class="btn btn-primary">Дізнатися більше</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="book_11.jpg" class="card-img-top" alt="Карточка">
+      <div class="card-body">
+        <h5 class="card-title">11. «Соловей» Крістін Генна</h5>
+        <p class="card-text">Історія розповідає про взаємини двох сестер за часів Другої світової війни. Тільки уявіть: французьке село, колись тиха гавань, стало ареною бойових дій і дві сестри, Віанна та Ізабель, які не бачилися давно, живуть під одним дахом. Ось тільки життєві ситуації у них різні: Ізабель рветься до лав Опору, а Віанна тільки провела чоловіка на фронт. Конфронтація інтересів та багато трагізму.</p>
+        <a href="#" class="btn btn-primary">Дізнатися більше</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="book_10.jpg" class="card-img-top" alt="Карточка">
+      <div class="card-body">
+        <h5 class="card-title">10. «Щоденник Анни Франк». Ганна Франк</h5>
+        <p class="card-text">Книжка заснована на реальних записках єврейської дівчинки Ганни Франк, яка описувала ситуацію, що склалася під час Другої світової війни. Вона розповідала про те, що відбувалося з нею та іншими жителями притулку під час окупації нацистами Нідерландів.
+
+          Душощипна історія була перекладена 67 мовами світу і розпродано було понад 67 мільйонів екземплярів книг..</p>
+        <a href="#" class="btn btn-primary">Дізнатися більше</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="book_9.jpg" class="card-img-top" alt="Карточка">
+      <div class="card-body">
+        <h5 class="card-title">9. «Думай та багаті». Наполеон Хілл</h5>
+        <p class="card-text">Якщо коротко, то в книзі представлено 13 кроків, як досягти успіху в будь-якій сфері діяльності. Наполеон Хілл на собі протестував ці уроки, адже ще хлопцям йому доводилося багато працювати, щоб сплатити собі навчання в університеті. На створення книги його підштовхнув Ендрю Карнегі.
+
+          Книга розійшлася тиражем у 30 мільйонів екземплярів і стала однією з найбільш читаних у світі.</p>
+        <a href="#" class="btn btn-primary">Дізнатися більше</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="book_8.jpg" class="card-img-top" alt="Карточка">
+      <div class="card-body">
+        <h5 class="card-title">8. «Віднесені вітром». Маргарет Мітчелл
+        </h5>
+        <p class="card-text">Деякі письменники видають за романом на рік, а є унікуми, які пишуть одну книгу за все життя і стають всесвітньо відомими та багатими. Маргарет Мітчелл - З цієї категорії. Сімейна сага про кілька поколінь сімейства О'Хара настільки сподобалася читачам, що вони благали Маргарет Мітчелл написати продовження, але нічого, крім «Віднесених вітром», письменниця більше не написала. 
+
+          Протягом 50 років було продано близько 33 мільйонів екземплярів.</p>
+        <a href="#" class="btn btn-primary">Дізнатися більше</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="book_7.jpg" class="card-img-top" alt="Карточка">
+      <div class="card-body">
+        <h5 class="card-title">7. «Сутінки. Сага». Стефані Майер</h5>
+        <p class="card-text">Найбільш читаний роман про вампірів у світі. Сюжет цієї книги буквально наснився Стефані Маєр і, через три роки, вийшла перша книга про роман дівчини і вампіра, який живиться кров'ю тварин.
+
+        Критики неоднозначно поставилися до цієї книги, але роман приніс оглушливий успіх автору. Його переклали 37 мовами світу і продали 43 мільйони екземплярів.</p>
+        <a href="#" class="btn btn-primary">Дізнатися більше</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="book_6.jpg" class="card-img-top" alt="Карточка">
+      <div class="card-body">
+        <h5 class="card-title">6. «Код да Вінчі». Ден Браун</h5>
+        <p class="card-text">Перед головним героєм цього роману, Робертом Ленгдоном, стоїть непросте завдання – розкрити вбивство Жака Соньєра, куратора Лувру, знайденого мертвим у вигляді Вітрувіанської людини. Щоб розгадати таємницю, Роберту потрібно вивчити ряд робіт Леонардо да Вінчі. 
+
+          Книга із загадковим сюжетом принесла Дену Брауну шосте місце у рейтингу. Щоб весь світ зміг ознайомитися з його твором, книга була перекладена 44 мовами і було продано понад 57 мільйонів екземплярів.</p>
+        <a href="#" class="btn btn-primary">Дізнатися більше</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="book_5.jpg" class="card-img-top" alt="Карточка">
+      <div class="card-body">
+        <h5 class="card-title">5. "Алхімік". Пауло Коельо</h5>
+        <p class="card-text">Перша книга, через яку світ зміг ближче познайомитися з Пауло Коельо. Історія розповідає про мандри пастуха Сантьяго, який вирушив на пошуки єгипетських скарбів, що приснилися йому уві сні. На його шляху - безліч випробувань і труднощів, але він їх успішно долає і знаходить найголовніший скарб - життєвий досвід.
+
+          Книга була перекладена 67 мовами світу, її прочитали жителі 117 країн світу, а тираж у 65 мільйонів екземплярів розійшовся миттєво.</p>
+        <a href="#" class="btn btn-primary">Дізнатися більше</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="book_4.jpg" class="card-img-top" alt="Карточка">
+      <div class="card-body">
+        <h5 class="card-title">4. «Володар кілець». Дж. Р. Р. Толкін
+        </h5>
+        <p class="card-text">Фентезі розповідає про магічне Кільце Всевладдя, навколо якого відбуваються різні перипетії. Спочатку автор хотів залишити головним героєм хобіту Більбо, але він не надто підходив на цю роль. Потрібен був вольовий та безстрашний герой. Як наслідок, світ побачив захоплюючу трилогію на чолі з Фродо Беґгінсом, племінником Більбо.
+
+          Роман розійшовся тиражем у 103 мільйони екземплярів і став однією з найбільш читаних книг у всьому світі.</p>
+        <a href="#" class="btn btn-primary">Дізнатися більше</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="book_3.jpg" class="card-img-top" alt="Карточка">
+      <div class="card-body">
+        <h5 class="card-title">3. "Гаррі Поттер". Джоан Роулінг</h5>
+        <p class="card-text">Це було очевидно, але все ж таки лише третє місце. Книги Джоан Роулінг носять звання найбільш читаних книг серед молоді. А розповідають вони про хлопчика-сироту, якому від народження було дано магічні здібності. Боротьба зі злом, дружба і кохання – все присутні у книгах про Гаррі Поттера.
+
+          За 20 років вийшло близько 400 мільйонів екземплярів.</p>
+        <a href="#" class="btn btn-primary">Дізнатися більше</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="book_2.jpg" class="card-img-top" alt="Карточка">
+      <div class="card-body">
+        <h5 class="card-title">2. "Цитати Мао Цзедун". Мао Цзедун</h5>
+        <p class="card-text">Назва книги говорить сама за себе. У ній зібрано 427 цитат великого імператора Китайської Народної Республіки. За правління Мао кожному жителю потрібно було знати ці цитати та дотримуватися їх. Багато хто досі радить шукати відповіді на хвилюючі питання саме у цій збірці.
+
+          Світ побачив 820 мільйонів екземплярів цієї книги.</p>
+        <a href="#" class="btn btn-primary">Дізнатися більше</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="book_1.jpg" class="card-img-top" alt="Карточка">
+      <div class="card-body">
+        <h5 class="card-title">1. "Біблія"</h5>
+        <p class="card-text">Найпопулярніша книга світу. Вона була перекладена 2000 мовами світу і випущено близько 3,9 мільярдів книг. Християнське Писання вже близько 4000 років, але воно щороку залишається на першій позиції найпопулярніших книг світу.</p>
+        <a href="#" class="btn btn-primary">Дізнатися більше</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer id="footer"></footer>
+  
   </body>
 </html>
